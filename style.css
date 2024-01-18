@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: "Work sans", sans-serif;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    overflow: hidden;
+    background-color: hsl(275, 100%, 97%);
+    background-image: url("./assets/images/background-pattern-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: hsl(292, 42%, 14%);
+}
+
+.show { display: block;}
+.hide { display: none;}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.faqBox {
+    width: min(90%, 320px);
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 4%;
+    filter: drop-shadow(0 10px 20px hsl(292, 16%, 49%));
+}
+
+.faq {
+    align-content: center;
+    gap: 1.3rem;
+    font-weight: 700;
+}
+
+.faq h1 {
+    font-size: 2rem;
+}
+
+article {
+    border-bottom: 1px solid hsl(275, 100%, 97%);
+    padding: 1.2rem 0;
+}
+
+article:last-child {
+    border-bottom: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover, button:focus {
+    color: hsl(292, 16%, 49%);
+}
+
+.question {
+    justify-content: space-between;
+    gap: 1.2rem;
+    font-size: .7rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.answer {
+    opacity: 0;
+    max-height: 0;
+    color: hsl(292, 16%, 49%);
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.4;
+    padding-top: 1rem;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+button[aria-expanded='true'] + .answer {
+    opacity: 1;
+    max-height: 12em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.answer p{
+    opacity: .8;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media only screen and (min-width: 601px) {
+    .container {
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    }
+
+    .faqBox {
+        width: 550px;
+        padding: 2rem;
+    }
+
+    .answer {
+        font-size: 1rem;
+    }
+}
