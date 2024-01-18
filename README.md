@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/devanike/Responsive-FAQ-Accordion]
-- Live Site URL: [Add live site URL here]
+- Live Site URL: [https://devanike.github.io/Responsive-FAQ-Accordion/]
 
 ## My process
 
@@ -47,7 +47,7 @@ Users should be able to:
 
 ### What I learned
 
-I learnt how to work with ARIA for accessibility and also how to make proper use of the foreach() method in javascript.*
+I learnt how to work with ARIA for accessibility and also how to make proper use of the foreach() method in javascript.
 
 ### Continued development
 
