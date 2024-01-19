@@ -71,7 +71,7 @@ button:hover, button:focus {
 .question {
     justify-content: space-between;
     gap: 1.2rem;
-    font-size: .7rem;
+    font-size: 1rem;
     font-weight: 700;
     text-align: left;
 }
